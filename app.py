@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar el conjunto de datos
-df = pd.read_csv("nombre_del_archivo.csv")  # Reemplaza con el nombre real del archivo
+df = pd.read_csv("vehicles_us.csv")  # 
 
 # Mostrar los primeros registros
 st.write("Vista previa del conjunto de datos:")
@@ -69,6 +69,7 @@ if scatter_button:
                      title="Precio vs Año del Modelo por Condición",
                      labels={"model_year": "Año del modelo", "price": "Precio (USD)"})
     st.plotly_chart(fig, use_container_width=True)
+
 
 
 
